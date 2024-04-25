@@ -99,9 +99,9 @@ public class Plana{
         double l_q = scanner.nextDouble();
 
         double area_q = Math.pow(l_q, 2);
-        System.out.println("A area do retangulo: " + area_q);
+        System.out.println("A area do quadrado: " + area_q);
         double perimetro_q = 4 * l_q;
-        System.out.println("O perimetro do retangulo: " + perimetro_q);
+        System.out.println("O perimetro do quadrado: " + perimetro_q);
     }  
     // LOSANGO
      private static void calcularAreaLos(Scanner scanner) {
@@ -131,7 +131,7 @@ public class Plana{
         double area_tri = (a_tri * h_tri) / 2;
         System.out.println("A area do triangulo: " + area_tri);
         double perimetro_tri = a_tri + b_tri + c_tri;
-        System.out.println("O perimetro do losango: " + perimetro_tri);
+        System.out.println("O perimetro do triangulo: " + perimetro_tri);
     }     
     //TRIANGULO EQUILATERO
      private static void calcularAreaTriEq(Scanner scanner) {
@@ -139,9 +139,9 @@ public class Plana{
         double l_treq = scanner.nextDouble();    
                 
         double area_treq = Math.pow(l_treq, 2) * Math.sqrt(3) / 4;
-        System.out.println("A area do triangulo: " + area_treq);
+        System.out.println("A area do triangulo equilatero: " + area_treq);
         double perimetro_treq =  3 * l_treq;
-        System.out.println("O perimetro do losango: " + perimetro_treq);
+        System.out.println("O perimetro do triangulo equilatero: " + perimetro_treq);
     }  
     //CIRCUNFERENCIA
      private static void calcularAreaCir(Scanner scanner) {
@@ -149,8 +149,8 @@ public class Plana{
         double r_cir = scanner.nextDouble();    
                 
         double area_cir = Math.PI * Math.pow(r_cir, 2);
-        System.out.println("A area do triangulo: " + area_cir);
+        System.out.println("A area da circunferencia: " + area_cir);
         double perimetro_cir = 2 * Math.PI * r_cir;
-        System.out.println("O perimetro do losango: " + perimetro_cir);
+        System.out.println("O perimetro da circunferencia: " + perimetro_cir);
     }     
 }
