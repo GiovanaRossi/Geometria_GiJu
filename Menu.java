@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Menu extends Plana{
+public class Menu extends Geometria{
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -19,17 +19,11 @@ public class Menu extends Plana{
                 GeomeEspacial(scanner);
                 break;
             default:
-                System.out.println("A opção escolhida está inválida. Por favor, escolha outra opção.");
+                System.out.println("A opção escolhida está inválida. Por favor, escolha outra opção!");
                 break;   
             }     
     }
 
-    private static String GeomeEspacial(Scanner scanner) {
-        System.out.println(GeomeEspacial());
-    }
-    private static String Plana(Scanner scanner) {
-        System.out.println(Plana());
-    }
 }
 
-// O SCANNER NÃO PODE PARAR DE RODAR O MENU!! 
+// O SCANNER NÃO PODE PARAR DE RODAR O MENU!!
