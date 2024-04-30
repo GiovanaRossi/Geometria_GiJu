@@ -1,6 +1,6 @@
 import java.util.Scanner;
  
-public class Plana{
+public class Plana extends GeomeEspacial{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -47,6 +47,7 @@ public class Plana{
         System.out.println("A opção escolhida está inválida. Por favor, escolha outra opção.");
         break;
     }
+    scanner.close();
 }
     
     // TRAPEZIO    
