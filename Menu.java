@@ -11,6 +11,8 @@ public class Menu extends GeomeEspacial{
             System.out.println("2. Geometria Espacial.");
             System.out.println("3. Sair.");
         
+            int escolha = scanner.nextInt();
+            scanner.nextLine();
         }
     }
 }
