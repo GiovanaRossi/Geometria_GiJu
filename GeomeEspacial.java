@@ -1,6 +1,6 @@
 import java.util.Scanner;
  
-public class GeomeEspacial extends Plana{
+public class GeomeEspacial{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
        
