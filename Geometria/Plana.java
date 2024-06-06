@@ -1,7 +1,7 @@
 package Geometria;
 import java.util.Scanner;
 public class Plana{
-    public static void main(String[] args) {
+    public void principal(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
 // Escolha da forma
