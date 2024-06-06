@@ -1,5 +1,4 @@
 import java.util.Scanner;
- 
 public class Plana{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -153,5 +152,5 @@ public class Plana{
         System.out.println("A area da circunferencia: " + area_cir);
         double perimetro_cir = 2 * Math.PI * r_cir;
         System.out.println("O perimetro da circunferencia: " + perimetro_cir);
-    }     
-}
+        }     
+    }
