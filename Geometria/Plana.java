@@ -1,9 +1,11 @@
+package Geometria;
 import java.util.Scanner;
 public class Plana{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
 // Escolha da forma
+
     System.out.println("Escolha a forma plana:");
     System.out.println("1. Trapezio");
     System.out.println("2. Paralelogramo");
@@ -15,7 +17,7 @@ public class Plana{
 	System.out.println("8. Circunferencia");
 
 	int opcao = scanner.nextInt();
-        
+      
     switch (opcao){
     case 1:
         calcularAreaTrap(scanner);
@@ -41,14 +43,13 @@ public class Plana{
 	case 8:
         calcularAreaCir(scanner);
         break;
-	
 	default:
         System.out.println("A opção escolhida está inválida. Por favor, escolha outra opção.");
         break;
     }
     scanner.close();
 }
-    
+
     // TRAPEZIO    
     private static void calcularAreaTrap(Scanner scanner) {
         System.out.print("Digite o valor de b: ");
