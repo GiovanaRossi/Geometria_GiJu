@@ -1,12 +1,12 @@
 package Geometria;
 import java.util.Scanner;
 
-public class Menu {
+public class Menu{
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int escolha;
-
+        
         // Loop principal do menu
         while (true) {
             System.out.println("Seja bem vindo, selecione o que deseja calcular: ");
@@ -27,11 +27,10 @@ public class Menu {
                 case 2:
                     GeomeEspacial Gespacial = new GeomeEspacial();
                     System.out.println("Opção selecionada: Geometria Espacial.");
-                    // Aqui você pode chamar um método para calcular geometria espacial
                     break;
                 case 3:
-                    System.out.println("Saindo do programa...");
-                    // Encerra o programa
+                // Encerra o programa
+                    System.out.println("Saindo do programa...");    
                     scanner.close();
                     return;
                 default:

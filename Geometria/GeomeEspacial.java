@@ -10,7 +10,7 @@ public class GeomeEspacial{
         System.out.println("2. Cilindro");
         System.out.println("3. Pirâmide");
         System.out.println("4. Cone");
-        System.out.println("5. Tronco Cone");
+        System.out.println("5. Tronco de Cone");
         System.out.println("6. Esfera");
 
         int Escolha = scanner.nextInt();
@@ -42,16 +42,17 @@ public class GeomeEspacial{
     }
     // Prisma    
     private static void CalculoPrisma (Scanner scanner) {
-        System.out.print("Digite o valor de a: ");
-        double a_pr = scanner.nextDouble();
+        System.out.print("Digite o valor de l: ");
+        double l_pr = scanner.nextDouble();
         System.out.print("Digite o valor de b: ");
         double b_pr = scanner.nextDouble();
-        System.out.print("Digite o valor de c: ");
-        double c_pr= scanner.nextDouble();
-        double area_pr = 2*a_pr*b_pr + 2*b_pr*c_pr + 2*a_pr*c_pr;
-        System.out.println("A area Total do paralelepípedo: " + area_pr);
-        double vo_pr = a_pr*b_pr*c_pr;
-        System.out.println("A Volume Total do paralelepípedo: " + area_pr);   
+        System.out.print("Digite o valor de h: ");
+        double h_pr= scanner.nextDouble();
+        double area_pr = 2*l_pr*b_pr + 2*b_pr*h_pr + 2*l_pr*h_pr;
+        System.out.println("A area Total do Prima: " + area_pr);
+        double area_base = 4 * l_pr;
+        double vo_pr = area_base * h_pr;
+        System.out.println("O Volume Total do Prisma: " + vo_pr);   
     }
  
     // Cilindro
@@ -63,7 +64,7 @@ public class GeomeEspacial{
         double area_ci = 2 * Math.PI * r_ci *(r_ci + h_ci);
         System.out.println("A area Total do Cilindro: " + area_ci);
         double v_ci =  Math.PI * Math.pow(r_ci, 2) * h_ci;
-        System.out.println("A Volume Total do Cilindro: " + v_ci);
+        System.out.println("O Volume Total do Cilindro: " + v_ci);
     }
 
     // Pirâmide
@@ -77,7 +78,7 @@ public class GeomeEspacial{
         double area_pi = al_pi + ab_pi;
         System.out.println("A area Total da Pirâmide: " + area_pi);
         double v_pi = ab_pi * h_pi/3;
-        System.out.println("A Volume Total da Pirâmide: " + v_pi);
+        System.out.println("O Volume Total da Pirâmide: " + v_pi);
     }  
 
     // Cone
@@ -93,7 +94,7 @@ public class GeomeEspacial{
         double area_co =  ab_co + al_co;
         System.out.println("A area Total do Cone: " + area_co);
         double v_co =  Math.PI * Math.pow(r_co, 2) * h_co / 3;
-        System.out.println("A Volume do Cone: " + v_co);
+        System.out.println("O Volume do Cone: " + v_co);
     } 
     
     //Tronco
@@ -107,9 +108,9 @@ public class GeomeEspacial{
         System.out.print("Digite o valor de h: ");
         double h_t = scanner.nextDouble();
         double area_t = Math.PI * Math.pow(rme_t, 2) + Math.PI * Math.pow(rma_t, 2) + Math.PI * g_t * (rma_t+ rme_t);
-        System.out.println("A area Total do Tronco do cone: " + area_t);
+        System.out.println("A area Total do Tronco de cone: " + area_t);
         double v_t =  Math.PI * h_t *(Math.pow(rme_t, 2) + rme_t* rma_t + Math.pow(rma_t, 2)) / 3;
-        System.out.println("A Volume do Tronco do cone: " + v_t);
+        System.out.println("O Volume do Tronco de cone: " + v_t);
     }
 
     //Esfera
@@ -119,6 +120,6 @@ public class GeomeEspacial{
         double area_es =  4 * Math.PI * Math.pow(r_es, 2);
         System.out.println("A area Total do Esfera: " + area_es);
         double v_es =  4/3 * Math.PI * Math.pow(r_es, 3);
-        System.out.println("A Volume da Esfera: " + v_es);
+        System.out.println("O Volume da Esfera: " + v_es);
     }
 }
