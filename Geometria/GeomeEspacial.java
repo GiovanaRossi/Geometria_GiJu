@@ -1,7 +1,7 @@
 package Geometria;
 import java.util.Scanner;
 public class GeomeEspacial{
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Escolha da forma

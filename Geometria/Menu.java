@@ -1,4 +1,6 @@
 package Geometria;
+import Geometria.Plana;
+import Geometria.GeomeEspacial;
 import java.util.Scanner;
 
 public class Menu{
@@ -22,11 +24,12 @@ public class Menu{
                 case 1:
                     Plana plana = new Plana();
                     System.out.println("Opção selecionada: Geometria Plana.");
-                    
+                    plana.main(args);
                     break;
                 case 2:
                     GeomeEspacial Gespacial = new GeomeEspacial();
                     System.out.println("Opção selecionada: Geometria Espacial.");
+                    Gespacial.Main(args);
                     break;
                 case 3:
                 // Encerra o programa
@@ -36,7 +39,7 @@ public class Menu{
                 default:
                     System.out.println("Opção inválida. Por favor, selecione novamente.");
                     break;
-            }
+            } 
         }
     }
 }
